@@ -2,7 +2,6 @@
 using namespace std;
 int main(){
     int a, b, c;
-    int Equilatero, Isosceles, Escaleno;
     cout<<"Ingrese la longitud de a: ";
     cin>>a;
     cout<<"Ingrese la longitud de b: ";
@@ -10,15 +9,15 @@ int main(){
     cout<<"Ingrese la longitud de c: ";
     cin>>c;
     if(a==b && b==c){
-            cout<<"\nEs un Triangulo Equilatero: "<<Equilatero<<endl;
+            cout<<"\nEs un Triangulo Equilatero: "<<endl;
             }
             else {
                  if(a==b && b!=c){
-                 cout<<"\nEs un Triangulo Isosceles: "<<Isosceles<<endl;
+                 cout<<"\nEs un Triangulo Isosceles: "<<endl;
                  }
                  else {
                       if(a!=b && b!=c){
-                      cout<<"\nEs un Triangulo Escaleno: "<<Escaleno<<endl;
+                      cout<<"\nEs un Triangulo Escaleno: "<<endl;
                       }
                       }
                  }

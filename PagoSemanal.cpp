@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main(){
     string nombre;
@@ -8,6 +9,8 @@ int main(){
     cin>>ph;
     cout<<"Ingresa el valor de ht: ";
     cin>>ht;
+    cout << "Ingrese su nombre: ";
+    cin >> nombre;
     ps = ph * ht;
     if (ht>40){
                ps = 2*ph * ht;

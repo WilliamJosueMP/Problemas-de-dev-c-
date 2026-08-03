@@ -18,7 +18,6 @@ int main(){
     int Impares;
     Impares=0;
     while(i<n){
-               i=i+1;
                cout<<"Agrega el valor de B["<<i<<"]: ";
                cin>>B[i];
                if(B[i]%2==0){
@@ -31,10 +30,20 @@ int main(){
                                                 Impares=Impares+1;
                                                 }
                                   }
-               }
-    promP=Sp/Pares;
-    cout<<"El promedio de los numeros pares es: "<<promP<<endl;
-    promI=Si/Impares;
-    cout<<"El promedio de los numeros impares es: "<<promI<<endl;
-    return 0;
+            i = i + 1; 
+    }
+
+    if (Pares > 0) {
+        promP = (float)Sp / Pares;
+        cout << "El promedio de los numeros pares es: " << promP << endl;
+    } else {
+        cout << "No se ingresaron numeros pares." << endl;
+    }
+
+    if (Impares > 0) {
+        promI = (float)Si / Impares;
+        cout << "El promedio de los numeros impares es: " << promI << endl;
+    } else {
+        cout << "No se ingresaron numeros impares." << endl;
+    }
 }
